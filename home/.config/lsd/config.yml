@@ -1,0 +1,12 @@
+blocks:
+  - permission
+  - user
+  - group
+  - size
+  - date
+  - name
+date: '+%Y-%m-%d %H:%M:%S'
+sorting:
+  column: name
+  reverse: false
+  dir-grouping: first

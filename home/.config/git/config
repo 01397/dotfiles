@@ -1,0 +1,22 @@
+[include]
+	path = ./user
+[init]
+	defaultBranch = main
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[pull]
+	rebase = false
+[fetch]
+	prune = true
+[color]
+	ui = auto
+[core]
+	editor = nano
+[alias]
+	co = checkout
+	sw = switch
+	br = branch

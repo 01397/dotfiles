@@ -1,0 +1,16 @@
+# gh
+/gh/*
+!/gh/config.yml
+
+# git
+/git/user
+
+# karabiner
+/karabiner/*
+!/karabiner/karabiner.json
+
+# raycast
+/raycast/*
+
+# zsh
+/zsh/.zsh_history
