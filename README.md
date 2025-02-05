@@ -21,7 +21,12 @@ cd dotfiles
 chmod u+x scripts/*.sh
 ```
 
-2. Modify the `Brewfile` to your needs.
+2. Copy the example Brewfile and modify it to your needs.
+
+```zsh
+cp Brewfile.example Brewfile
+```
+
 3. `./scripts/apply.sh`
 
 ## Maintenance
