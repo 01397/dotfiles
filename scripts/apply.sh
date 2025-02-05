@@ -9,6 +9,7 @@ REPO_HOME=$(pwd)/home
 ln -sfn $REPO_HOME/.config ~/.config
 ln -sfn $REPO_HOME/.zshenv ~/.zshenv
 ln -sfn $REPO_HOME/.mdefaults ~/.mdefaults
+echo "✔ Symbolic links created"
 
 # Enable TouchID for sudo
 if [[ -e /etc/pam.d/sudo_local ]]; then
@@ -43,3 +44,10 @@ else
   echo "✔ Homebrew dependencies installed"
 fi
 
+# Install mise
+mise install
+echo "✔ Tools managed by mise installed"
+
+# Apply macOS defaults
+mdefaults push
+echo "✔ macOS defaults applied"
