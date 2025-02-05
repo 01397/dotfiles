@@ -39,8 +39,8 @@ cask "visual-studio-code"
 cask "zoom"
 mas "Bitwarden", id: 1352778147
 mas "Dark Reader for Safari", id: 1438243180
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
+#mas "GarageBand", id: 682658836
+#mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LadioCast", id: 411213048
 mas "MenuBar Stats", id: 714196447

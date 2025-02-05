@@ -10,17 +10,9 @@ Homebrew is out of scope for this repository.
 
 ### Prerequisites
 
-1. Xcode Command Line Tools and Homebrew are required.
+1. Clone the repository.
 
-```zsh
-# Install Xcode Command Line Tools
-xcode-select --install
-
-# Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-2. Clone the repository.
+Xcode Command Line Tools will be installed when git is run for the first time.
 
 ```zsh
 # Clone repo
@@ -29,14 +21,8 @@ cd dotfiles
 chmod u+x scripts/*.sh
 ```
 
-3. Modify the `Brewfile` to your needs.
-
-### Apply Symlinks
-
-```zsh
-# Apply symlinks
-./scripts/apply.sh
-```
+2. Modify the `Brewfile` to your needs.
+3. `./scripts/apply.sh`
 
 ## Maintenance
 
