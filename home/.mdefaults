@@ -1,32 +1,4 @@
-NSGlobalDomain "com.apple.trackpad.scaling" 3
 
-com.apple.AppleMultitouchTrackpad "Clicking" 1
-
-com.apple.driver.AppleBluetoothMultitouch.trackpad "Clicking" 1
-
-com.apple.AppleMultitouchTrackpad "FirstClickThreshold" 0
-
-com.apple.AppleMultitouchTrackpad "SecondClickThreshold" 0
-
-NSGlobalDomain "com.apple.trackpad.scrolling" 1
-
-com.apple.AppleMultitouchTrackpad "DragLock" 0
-
-com.apple.AppleMultitouchTrackpad "Dragging" 0
-
-com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" 1
-
-com.apple.driver.AppleBluetoothMultitouch.trackpad "DragLock" 0
-
-com.apple.driver.AppleBluetoothMultitouch.trackpad "Dragging" 0
-
-com.apple.driver.AppleBluetoothMultitouch.trackpad "TrackpadThreeFingerDrag" 1
-
-NSGlobalDomain "com.apple.mouse.doubleClickThreshold" 0.5
-
-NSGlobalDomain "com.apple.springing.delay" 0
-
-com.apple.universalaccess "mouseDriverCursorSize" 1.75
 
 NSGlobalDomain InitialKeyRepeat 15
 
