@@ -1,5 +1,7 @@
 {
-    "global": { "show_in_menu_bar": false },
+    "global": {
+        "show_in_menu_bar": false
+    },
     "profiles": [
         {
             "complex_modifications": {
@@ -10,78 +12,94 @@
                             {
                                 "from": {
                                     "key_code": "left_command",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "parameters": { "basic.to_if_held_down_threshold_milliseconds": 100 },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                },
                                 "to": [
                                     {
                                         "key_code": "left_command",
                                         "lazy": true
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "japanese_eisuu" }],
-                                "to_if_held_down": [{ "key_code": "left_command" }],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "japanese_eisuu"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "left_command"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
                                     "key_code": "right_command",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "parameters": { "basic.to_if_held_down_threshold_milliseconds": 100 },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                },
                                 "to": [
                                     {
                                         "key_code": "right_command",
                                         "lazy": true
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "japanese_kana" }],
-                                "to_if_held_down": [{ "key_code": "right_command" }],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "japanese_kana"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "right_command"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
                     }
                 ]
             },
-            "devices": [
+            "name": "Default profile",
+            "selected": true,
+            "simple_modifications": [
                 {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 801,
-                        "vendor_id": 76
+                    "from": {
+                        "key_code": "caps_lock"
                     },
-                    "simple_modifications": [
+                    "to": [
                         {
-                            "from": { "key_code": "caps_lock" },
-                            "to": [{ "key_code": "left_control" }]
-                        },
-                        {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "f18" }]
+                            "key_code": "left_control"
                         }
                     ]
                 },
                 {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 801,
-                        "vendor_id": 1452
+                    "from": {
+                        "key_code": "right_option"
                     },
-                    "simple_modifications": [
+                    "to": [
                         {
-                            "from": { "key_code": "caps_lock" },
-                            "to": [{ "key_code": "left_control" }]
-                        },
-                        {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "f18" }]
+                            "key_code": "f18"
                         }
                     ]
                 }
             ],
-            "name": "Default profile",
-            "selected": true,
-            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+            "virtual_hid_keyboard": {
+                "keyboard_type_v2": "ansi"
+            }
         }
     ]
 }
