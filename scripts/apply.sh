@@ -51,3 +51,5 @@ echo "✔ Tools managed by mise installed"
 # Apply macOS defaults
 mdefaults push
 echo "✔ macOS defaults applied"
+
+echo "Restart your computer to apply all changes"
