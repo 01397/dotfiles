@@ -1,3 +1,7 @@
+# Wrangler (Cloudflare CLI)
+#   Files includes secrets
+.wrangler/
+
 # configstore
 #   Some tools use configstore to store configurations.
 #   https://www.npmjs.com/package/configstore
