@@ -1,5 +1,6 @@
 [tools]
 go = "latest"
-node = "latest"
+# `npm` must be placed before `node` not to use the npm provided by the Node.js installation.
 npm = "latest"
+node = "latest"
 pnpm = "latest"
