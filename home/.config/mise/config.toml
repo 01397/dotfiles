@@ -2,4 +2,9 @@
 go = "latest"
 node = "latest"
 npm = "latest"
+"npm:@anthropic-ai/claude-code" = "latest"
+"npm:ccusage" = "latest"
 pnpm = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["ruby", "node", "go"]
