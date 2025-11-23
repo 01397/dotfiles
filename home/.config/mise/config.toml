@@ -4,3 +4,8 @@ go = "latest"
 npm = "latest"
 node = "latest"
 pnpm = "latest"
+uv = "latest"
+"pipx:mcp-server-time" = "latest"
+
+[settings]
+pipx_uvx = true
