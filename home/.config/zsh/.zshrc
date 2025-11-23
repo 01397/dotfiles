@@ -32,6 +32,11 @@ fi
 # mise
 eval "$(${HOMEBREW_PREFIX}/bin/mise activate zsh)"
 
+# local.zsh not to be included in the repository.
+if [[ -r "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/local.zsh" ]]; then
+  source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/local.zsh"
+fi
+
 # lsd
 alias ls='lsd'
 
