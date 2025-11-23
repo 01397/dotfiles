@@ -77,3 +77,6 @@ __pycache__/
 *.tar.gz
 *.rar
 *.7z
+
+# local file for agents
+**/.claude/settings.local.json
