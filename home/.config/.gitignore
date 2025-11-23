@@ -11,6 +11,10 @@
 #   Ignore fish files created by Amazon Q
 /fish/*
 
+# gcloud
+#   Configurations, logs, and a lot of python files
+/gcloud/*
+
 # gh
 /gh/*
 !/gh/config.yml
