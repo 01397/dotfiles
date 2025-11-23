@@ -1,4 +1,4 @@
-NSGlobalDomain InitialKeyRepeat 15
+NSGlobalDomain "InitialKeyRepeat" 15
 NSGlobalDomain "KeyRepeat" 2
 NSGlobalDomain "NSAutomaticSpellingCorrectionEnabled" 0
 NSGlobalDomain "WebAutomaticSpellingCorrectionEnabled" 0
