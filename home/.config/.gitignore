@@ -33,4 +33,4 @@
 /zsh/.zsh_history
 /zsh/.zcompdump
 /zsh/.zsh_sessions
-/zsh/local.zsh
+/sheldon/plugins/*.local.zsh

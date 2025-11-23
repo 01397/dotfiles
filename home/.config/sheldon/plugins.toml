@@ -21,9 +21,6 @@ defer = "{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}"
 github = "romkatv/zsh-defer"
 apply = ["source"]
 
-[plugins.powerlevel10k]
-github = "romkatv/powerlevel10k"
-
 # zsh-syntax-highlighting must be sourced before zsh-history-substring-search
 [plugins.syntax-highlighting]
 github = "zdharma/fast-syntax-highlighting"
@@ -37,3 +34,13 @@ inline = """
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 """
+
+[plugins.local-plugins]
+local = "~/.config/sheldon/plugins"
+apply = ["source"]
+
+[plugins.starship]
+inline = 'eval "$(${HOMEBREW_PREFIX}/bin/starship init zsh)"'
+
+[plugins.mise]
+inline = 'eval "$(${HOMEBREW_PREFIX}/bin/mise activate zsh)"'
