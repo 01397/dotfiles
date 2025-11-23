@@ -28,10 +28,12 @@ node_modules/
 $py.class
 
 # Secrets
-
 .env
 .key
 .pem
 .crt
 .p12
 .pfx
+
+# local file for agents
+**/.claude/settings.local.json

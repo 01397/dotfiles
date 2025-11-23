@@ -15,7 +15,7 @@
 [color]
 	ui = auto
 [core]
-	editor = nano
+	editor = pico
 [alias]
 	co = checkout
 	sw = switch

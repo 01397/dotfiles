@@ -1,10 +1,12 @@
 [tools]
 go = "latest"
-node = "latest"
+# `npm` must be placed before `node` not to use the npm provided by the Node.js installation.
 npm = "latest"
-"npm:@anthropic-ai/claude-code" = "latest"
-"npm:ccusage" = "latest"
+node = "latest"
 pnpm = "latest"
+uv = "latest"
+"pipx:mcp-server-time" = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["ruby", "node", "go"]
+pipx_uvx = true

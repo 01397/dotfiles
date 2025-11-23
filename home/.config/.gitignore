@@ -1,11 +1,19 @@
+# Wrangler (Cloudflare CLI)
+#   Files includes secrets
+.wrangler/
+
 # configstore
 #   Some tools use configstore to store configurations.
 #   https://www.npmjs.com/package/configstore
 /configstore/*
 
 # fish
-#   Ignore fish files created by Amazon Q
+#   Ignore fish files created by Kiro CLI
 /fish/*
+
+# gcloud
+#   Configurations, logs, and a lot of python files
+/gcloud/*
 
 # gh
 /gh/*

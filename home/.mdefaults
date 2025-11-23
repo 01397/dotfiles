@@ -1,72 +1,35 @@
-
-
-NSGlobalDomain InitialKeyRepeat 15
-
+NSGlobalDomain "InitialKeyRepeat" 15
 NSGlobalDomain "KeyRepeat" 2
-
 NSGlobalDomain "NSAutomaticSpellingCorrectionEnabled" 0
-
 NSGlobalDomain "WebAutomaticSpellingCorrectionEnabled" 0
-
 NSGlobalDomain "NSAutomaticCapitalizationEnabled" 0
-
 NSGlobalDomain "NSAutomaticPeriodSubstitutionEnabled" 0
-
 NSGlobalDomain "NSAutomaticDashSubstitutionEnabled" 0
-
 NSGlobalDomain "NSAutomaticQuoteSubstitutionEnabled" 0
-
 com.apple.inputmethod.Kotoeri "JIMPrefFullWidthNumeralCharactersKey" 0
-
 com.apple.inputmethod.Kotoeri "JIMPrefShiftKeyActionKey" 0
-
 com.apple.dock "tilesize" 48
-
 com.apple.dock "magnification" 1
-
 com.apple.dock "largesize" 80
-
 com.apple.dock "autohide" 1
-
 com.apple.dock "autohide-delay" 0
-
 com.apple.dock "autohide-time-modifier" 0.7
-
 com.apple.dock "showhidden" 1
-
 com.apple.dock "mineffect" suck
-
 NSGlobalDomain "AppleScrollerPagingBehavior" 1
-
 NSGlobalDomain "_HIHideMenuBar" 0
-
 NSGlobalDomain "AppleMenuBarVisibleInFullscreen" 1
-
 com.apple.WindowManager "EnableStandardClickToShowDesktop" 0
-
 com.apple.dock "mru-spaces" 0
-
 com.apple.screencapture "show-thumbnail" 0
-
 com.apple.screencapture "disable-shadow" 1
-
 NSGlobalDomain "com.apple.sound.beep.feedback" 1
-
 com.apple.sharingd "DiscoverableMode" Everyone
-
 NSGlobalDomain "AppleShowAllExtensions" 1
-
 com.apple.finder "FXRemoveOldTrashItems" 1
-
 com.apple.finder "ShowPathbar" 1
-
 com.apple.finder "FXPreferredViewStyle" clmv
-
 com.apple.finder "QuitMenuItem" 1
-
 NSGlobalDomain "NSToolbarTitleViewRolloverDelay" 0
-
 com.apple.desktopservices "DSDontWriteNetworkStores" 1
-
 com.apple.finder "_FXEnableColumnAutoSizing" 1
-
