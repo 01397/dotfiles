@@ -1,0 +1,5 @@
+include = ["home/.config/starship.toml", "taplo.toml"]
+
+[formatting]
+align_entries = true
+reorder_keys  = false

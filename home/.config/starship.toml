@@ -1,0 +1,132 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = 'my_palette'
+
+# Which is equivalent to
+format = """
+$username\
+$hostname\
+$kubernetes\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$nats\
+$mise\
+$crystal\
+$custom\
+$sudo\
+$fill \
+$status\
+$time\
+$cmd_duration \
+$line_break\
+$jobs\
+$os\
+$container\
+$character"""
+
+
+[palettes.my_palette]
+black      = "#0f1720"
+red        = "#ff6b6b"
+green      = "#9ece6a"
+yellow     = "#e0af68"
+blue       = "#7aa2f7"
+magenta    = "#bb9af7"
+cyan       = "#7dcfff"
+white      = "#c0caf5"
+fg_primary = "#ffffff"
+fg_text    = "#c0caf5"
+bg_git     = "#006699"
+
+bright_black   = "#6b7089"
+bright_red     = "#ff7a7a"
+bright_green   = "#bfe67b"
+bright_yellow  = "#ffd47a"
+bright_blue    = "#88b4ff"
+bright_magenta = "#caa9ff"
+bright_cyan    = "#9be7ff"
+bright_white   = "#ffffff"
+
+bg_base    = "#132e78"
+foreground = "#cdd6f4"
+
+
+[kubernetes]
+disabled = false
+symbol   = "󱃾 "
+format   = "[$symbol$context( \\($namespace\\))]($style) in "
+
+[cmd_duration]
+min_time           = 2000
+format             = "[$duration]($style)"
+show_notifications = true
+min_time_to_notify = 1000
+
+[directory]
+truncation_length      = 8
+truncate_to_repo       = true
+format                 = "[ $path( $read_only) ]($style)"
+style                  = 'bg:bg_base fg:fg_text'
+repo_root_format       = "[ ]($style)[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)[ ]($style)"
+before_repo_root_style = 'bg:bg_base fg:fg_text'
+repo_root_style        = 'bg:bg_base fg:fg_primary bold'
+read_only              = ""
+
+[git_branch]
+format        = "[](bg:bg_base fg:bg_git)[ $symbol $branch(:$remote_branch)]($style)"
+style         = "bold bg:bg_git fg:#ffffff"
+symbol        = ""
+only_attached = true
+
+[git_commit]
+format        = "[](bg:bg_base fg:bg_git)[  $hash$tag]($style)"
+style         = "bold bg:bg_git fg:#ffffff"
+tag_symbol    = "  "
+only_detached = true
+tag_disabled  = false
+
+[git_state]
+style = "bg:yellow"
+
+[git_status]
+style       = "bg:#888888"
+format      = "[($staged$conflicted) ($ahead_behind )($modified$renamed$untracked$deleted$typechanged)](bg:bg_git fg:white)[](fg:bg_git)([]($style))"
+staged      = "+"
+conflicted  = "!"
+modified    = "[](bg:bg_git fg:yellow)"
+untracked   = "[](bg:bg_git fg:green)"
+renamed     = "[](bg:bg_git fg:green)"
+deleted     = "[](bg:bg_git fg:red)"
+typechanged = "[](bg:bg_git fg:yellow)"
+ahead       = '${count}󰁝'
+behind      = '${count}󰁅'
+diverged    = '${behind_count}󰁅 ${ahead_count}󰁝'
+
+[gcloud]
+disabled = true
+
+[mise]
+disabled         = false
+format           = "([ $health ](bg:yellow))"
+healthy_symbol   = ""
+unhealthy_symbol = " Run `mise doctor`"
+
+[fill]
+symbol = ""
+style  = "bold #444444"
+
+[status]
+disabled = false
+symbol   = " "
+
+[time]
+disabled = false
+format   = " [$time]($style) "

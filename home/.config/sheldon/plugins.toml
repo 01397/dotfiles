@@ -40,7 +40,13 @@ local = "~/.config/sheldon/plugins"
 apply = ["source"]
 
 [plugins.starship]
-inline = 'eval "$(${HOMEBREW_PREFIX}/bin/starship init zsh)"'
+inline = """
+if [ "${COPILOT_SESSION:-}" != "1" ]; then
+  eval "$(${HOMEBREW_PREFIX}/bin/starship init zsh)"
+else
+  PROMPT='%1~ %# '
+fi
+"""
 
 [plugins.mise]
 inline = 'eval "$(${HOMEBREW_PREFIX}/bin/mise activate zsh)"'
