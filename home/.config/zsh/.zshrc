@@ -1,6 +1,9 @@
 # Kiro CLI pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
 
+# Avoids PATH duplication from parent process in VS Code/Cursor-like integrated terminals.
+typeset -U path PATH
+
 # sheldon
 eval "$(${HOMEBREW_PREFIX}/bin/sheldon source)"
 
