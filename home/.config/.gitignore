@@ -2,34 +2,44 @@
 #   Files includes secrets
 .wrangler/
 
-# configstore
+# Configstore
 #   Some tools use configstore to store configurations.
 #   https://www.npmjs.com/package/configstore
 /configstore/*
 
-# fish
+# Fish shell
+#   I don't use fish.
 #   Ignore fish files created by Kiro CLI
 /fish/*
 
-# gcloud
+# Google Cloud SDK
 #   Configurations, logs, and a lot of python files
 /gcloud/*
 
-# gh
+# GitHub CLI
 /gh/*
 !/gh/config.yml
 
-# git
+# Git
+#   Ignore configuration including user name and email.
 /git/user
 
-# karabiner
+# Karabiner Elements
+#   Only keep the configuration file.
 /karabiner/*
 !/karabiner/karabiner.json
 
-# raycast
-/raycast/*
+# Raycast
+#   Ignore internal sources
+/raycast/ai/*
+/raycast/extensions/*
 
-# zsh
+# Zed editor
+#   Ignore this until I use it daily.
+/zed/*
+
+# Zsh
+#   Ignore history, completion, and session files.
 /zsh/.zsh_history
 /zsh/.zcompdump
 /zsh/.zsh_sessions
