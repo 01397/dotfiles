@@ -7,6 +7,11 @@
 #   https://www.npmjs.com/package/configstore
 /configstore/*
 
+# Claude
+/claude/*
+!/claude/statusline.sh
+!/claude/settings.json
+
 # Fish shell
 #   I don't use fish.
 #   Ignore fish files created by Kiro CLI
