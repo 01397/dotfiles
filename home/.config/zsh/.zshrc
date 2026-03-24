@@ -18,7 +18,9 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
 
 # Vite+ bin (https://viteplus.dev)
-. "$HOME/.vite-plus/env"
+if command -v vp >/dev/null 2>&1 && [[ -f "$HOME/.vite-plus/env" ]]; then
+  . "$HOME/.vite-plus/env"
+fi
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
