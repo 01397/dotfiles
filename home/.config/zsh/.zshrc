@@ -17,6 +17,9 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 # Google Cloud SDK
 export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
 
+# Claude
+export CLAUDE_CONFIG_DIR=$HOME/.config/claude
+
 # Vite+ bin (https://viteplus.dev)
 if command -v vp >/dev/null 2>&1 && [[ -f "$HOME/.vite-plus/env" ]]; then
   . "$HOME/.vite-plus/env"
